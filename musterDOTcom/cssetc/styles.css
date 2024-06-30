@@ -1,0 +1,170 @@
+/* usuefull */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/*custom font */
+@font-face {
+    src: url("../cssetc/fonts/minecraft-font/MinecraftRegular-Bmg3.otf");
+    font-family: Minecraft-regular;
+}
+
+@font-face {
+    src: url("../cssetc/fonts/PlaymegamesReguler-2OOee.ttf");
+    font-family: Play-Game;
+}
+
+@font-face {
+    src: url("../cssetc/fonts/pala.ttf");
+    font-family: pala;
+}
+
+ev1{font-size: 25px; font-family: Play-Game; color: rgb(0, 0, 0);}
+ev2{font-size: 25px; font-family: pala; color: black;}
+p{padding-left: 10px; font-size: 18px; font-family: Minecraft-regular; color: rgb(0, 0, 0); text-align: justify;}
+pl{font-family: Minecraft-regular;}
+pf{font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);}
+ptos{font-size: 18px; font-family: sans-serif; color: rgb(0, 0, 0); margin-top: 10px; text-align: justify; display: block;}
+htos{font-family: pala; color: rgb(0, 0, 0);}
+cost{color: rgb(1, 114, 1);}
+psh{padding-left: 10px; font-size: 18px; font-family: Minecraft-regular; color: rgb(0, 0, 0); text-align: left; display: block;}
+pshh{font-size: 18px; font-family: Play-Game; color: rgb(0, 0, 0); text-align: center; display: block; padding-bottom: 5px; padding-top: 20px; text-decoration: underline;}
+
+/* background */
+body {
+    background: url('../gfx/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-color: #010F1F;
+    font-family: sans-serif;
+  }
+
+/* debug */
+.debug{border: 1px solid red;}
+/* global */
+.medias a{margin: 3px;}
+.block{padding-top: 30px;}
+.borderro{border: 1px solid;}
+hr{border-top: 1px solid gray;}
+/*hr{border: 1px solid black;} */
+
+/* local */
+body .header .container{background-color: rgba(223, 223, 223, 0.815); box-shadow: 0 0 5px 5px rgba(112, 112, 112, 0.726); border-radius: 10px;}
+body .header .profimage img{border: 1px solid; border-radius: 10px; height: auto; width: 100px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);}
+body .header .greet p{text-align: right; padding-right: 7px;}
+body .header .text .depth>p{text-align: left; font-size: 17px; padding: 0px;}
+body .post-panel .container{background-color: rgba(223, 223, 223, 0.815); box-shadow: 0 0 5px 5px rgba(112, 112, 112, 0.726); border-radius: 10px;}
+body .post-panel .block .medias>div{background-color: rgba(0, 0, 0, 0); box-shadow: 0 0 0px 0px rgba(112, 112, 112, 0.726); padding-top: 10px; border-radius: 10px;}
+body .post-panel .block .gallery>div{border-radius: 10px;}
+body .post-panel .block .psheet>div{border-radius: 10px;}
+body .post-panel .block .medias .medias-big img:hover{box-shadow: 0px 0px 5px 3px rgba(66, 110, 146, 0.575); transition: 0.3s;}
+body .post-panel .block .medias .medias-big img{border-radius: 15px; border: 1px solid black;}
+body .post-panel .block .coffee img{border-radius: 5px; border: 1px solid black;}
+body .post-panel .block .coffee img:hover{box-shadow: 0px 0px 5px 3px rgba(66, 110, 146, 0.575); transition: 0.3s;}
+body .post-panel .block .misc>div{border-radius: 10px;}
+body .post-panel .block .prcsheet ul{color: rgb(0, 0, 0); padding-left: 6px; list-style-type: square;}
+body .post-panel .block .prcsheet psh cost{float: right;}
+body .post-panel .block .medias .medias-small{display: none;}
+body .post-panel .tosendbox p{color: red;}
+
+/* responsive candies (manual) */
+@media(min-width: 1200px){
+    body .header .text>div{padding-top: 15px;}
+    body .post-panel .term htos{font-size: 60px !important;}
+}
+@media(min-width: 768px){
+    body .header .text>div{padding-top: 0px;}
+    body .header .profimage img{margin-top: 10px;}
+    body .post-panel .term htos{font-size: 35px;}
+
+}
+@media(max-width: 767px){
+    body .post-panel .block .medias .medias-small{display: grid; text-align: left; margin-left: 20%;}
+    body .post-panel .block .medias .medias-small>a{padding: 10px;}
+    body .post-panel .block .medias .medias-big{display: none;}
+    psh{padding-left: 10px; font-size: 13px; font-family: Minecraft-regular; color: rgb(0, 0, 0); text-align: left; display: block;}
+    body .header .text>div{padding-top: 15px;}
+    body .post-panel .tos{padding-top: 20px;}
+    body .post-panel .tos ul li{padding-top: 15px;}
+    body .post-panel .tosendbox>div{padding-top: 30px;}
+    body .post-panel .tosendbox p{text-align: justify;}
+    body .post-panel .tospdffile>div{padding-top: 30px;}
+    body .post-panel .term htos{font-size: 35px;}
+    body .post-panel .term{padding-bottom: 15px;}
+    body .post-panel .block .gallery img{height: auto; width: 120px;}
+}
+@media(max-width: 320px){
+    body .header .profimage img{margin-top: 15px;}
+}
+@media(max-width: 280px){
+    body .header .profimage{display: none;}
+    body .header .text>div{width: 260px;}
+    body .post-panel .block .gallery img{height: auto; width: 100px;}
+    pl{font-size: 14px;}
+    psh{font-size: 10px;}
+    body .post-panel .term htos{font-size: 25px;}
+    body .post-panel .tos ev2{font-size: 17px;}
+}
+/* links decoration */
+a:link{color: rgb(0, 62, 155);}
+a:visited{color: rgb(0, 127, 185);}
+a:hover{color: rgb(42, 130, 230); text-decoration: none;}
+
+/* fancy box */
+.wrapper img{width: auto; height: 150px; border: 1px solid white; box-shadow: 0 0 5px 5px rgba(112, 112, 112, 0.726); margin: 10px;}
+
+/* zoom on hover (in gallery images) */
+.wrapper img:hover{transition: 0.3s; transform: scale(1.1);}
+
+/* list and term of service*/
+ul{margin-left: 10px;}
+body .post-panel .tos>div{border-radius: 10px;}
+
+/* custom scroll bar */
+::-webkit-scrollbar{width: 10px;}
+::-webkit-scrollbar-track{box-shadow: inset 0 0 5px rgb(53, 53, 53); background-color: rgb(255, 255, 255);}
+::-webkit-scrollbar-thumb{background-color: rgb(139, 139, 139); border-radius: 25px; box-shadow: inset 0 0 5px rgb(53, 53, 53);}
+::-webkit-scrollbar-thumb:hover{background-color: rgb(82, 82, 82);}
+
+/* navigation menu*/
+nav{width: 100%; position: fixed; z-index: 2;     
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7c7c7c+0,474747+100 */
+    background: #7c7c7c; /* Old browsers */
+    background: -moz-linear-gradient(top,  #7c7c7c 0%, #474747 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #7c7c7c 0%,#474747 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #7c7c7c 0%,#474747 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c7c7c', endColorstr='#474747',GradientType=0 ); /* IE6-9 */}
+nav ul{width: 80%; margin: 0 0 0 340px; padding: 0;}
+nav ul li{list-style: none; display: inline-block; padding: 10px;}
+nav ul li:hover{background: rgb(112, 112, 112);}
+nav ul li a{color: white; text-decoration: none;}
+.toggle{width: 100%; padding: 10px 20px;  text-align: right; box-sizing: border-box; color: white; font-size: 20px; display: none;}
+@media(max-width:768px){
+    .toggle{display: block;}
+    nav{background: rgb(65, 65, 65);}
+    nav ul{width: 100%; margin: 0 auto; display: none;}
+    nav ul li{display: block; text-align: center;}
+    .active{display: block;}
+}
+
+nav ul li{font-size: 15px; font-family: sans-serif;}
+nav ul li a:link{color:white}
+nav ul li a:visited{color: white}
+nav .toggle .menu img{width: auto; height: 20px; margin-top: 5px;}
+nav .toggle .menu img:hover{filter:invert(100%); transition: 0.3s;}
+
+/* colorzilla gradients*/
+.toggle{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#9b9b9b+0,878787+50,8c8c8c+51,c1c1c1+100 */
+background: rgb(155,155,155); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(155,155,155,1) 0%, rgba(135,135,135,1) 50%, rgba(140,140,140,1) 51%, rgba(193,193,193,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(155,155,155,1) 0%,rgba(135,135,135,1) 50%,rgba(140,140,140,1) 51%,rgba(193,193,193,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(155,155,155,1) 0%,rgba(135,135,135,1) 50%,rgba(140,140,140,1) 51%,rgba(193,193,193,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b9b9b', endColorstr='#c1c1c1',GradientType=0 ); /* IE6-9 */
+}
